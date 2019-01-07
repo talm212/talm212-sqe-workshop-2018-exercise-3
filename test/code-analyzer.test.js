@@ -59,7 +59,7 @@ describe('just funcs', () => {
             ,'digraph cfg { forcelabels=true n0 [label=\"let c = 20;\nlet d = 20;\", xlabel = 1,  shape=rectangle,]\nn1 [label=\"return c * d;\", xlabel = 2,  shape=rectangle,]\nn0 -> n1 []\n }'
         );
     });
-
+ 
     it('function 6', () => {
         assert.equal(
             check1('function boo(){let a = 1;let b = [];b[0] = a;return b[0];}')
